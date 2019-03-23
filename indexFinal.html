@@ -1,0 +1,49 @@
+<html>  
+    <head>
+            <script src="./indexFinal.js"></script>
+    </head>
+<body>  
+
+    <div id="body" style="background-color: pink;">
+    
+      <form name= "my_form" >
+          <br><br>
+          <span id="name_label" style="background-color: yellow;" >Student Name</span> 
+          <input type="text" name="student_name" id="student_name" style="background-color: yellow;" > 
+          <br><br>
+          <span id="age_label" style="background-color: yellow;">Age</span> 
+          <input type="text" name="student_age" id="student_age" style="background-color: yellow;" >
+          <br><br>
+          Gender <!-- input radio button -->
+          <input type="radio" name="gender" value="m" checked="checked">M
+          <input type="radio" name="gender" value="f" >F<br><br>
+
+          City <!-- select options -->
+          <select id="city" name="city">
+              <option value="0" disabled selected hidden>Choose City</option>
+              <option value="delhi">Delhi</option>
+              <option value="mumbai">Mumbai</option>
+              <option value="kolkata">Kolkata</option>
+              <option value="chennai">Chennai</option>
+          </select><br><br>
+          Hobby   <!-- check box -->
+          <input type="checkbox" name="painting" id="painting">Painting
+          <input type="checkbox" name="dancing" id="dancing">Dancing
+          <input type="checkbox" name="sports" id="sports">Sports
+          <br><br>
+     
+            <!-- submit button -->
+          <input type="button" id="student_submit" onclick="validateName();" value="Submit">
+      </form>
+      <br><br>
+      <div>
+            <!-- error messages with proper span -->
+            Name:&nbsp;<span id="name_value"></span><br>
+            Age:&nbsp;<span id="age_value"></span><br>
+            City:&nbsp;<span id="city_value"></span><br>
+            Hobbies:&nbsp;<span id="hobbies_value"></span>
+      </div>
+    </div>
+
+</body>  
+</html> 
